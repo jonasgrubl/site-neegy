@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site responsivo neegy</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: #e2deaa80;
+        }
+
+        header{
+            background-color: #434003;
+            color: white;
+            text-align: center;
+            padding: 5vh 5%;
+        }
+
+        nav{
+            background-color: #68570288;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 10px;            
+        }
+
+        nav a{
+            color: white;
+            text-decoration: none;            
+        }
+
+        main{
+            width: 90%;
+            margin: 30px auto;
+        }
+
+        .destaque{
+            background-color: white;
+            padding: 30px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .cards{
+            display: flex;
+            gap: 20px;
+        }
+
+        .card{
+            width: 33%;
+            min-height: 25vh;
+
+            background-color: rgb(227, 194, 4);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer{
+            background-color: #211c00;
+            color: white;
+            text-align: center;
+            padding: 4vh 5%;
+            font-size: 25px;
+        }
+
+
+        /* celular */
+        @media (max-width: 600px){
+            nav{
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .cards{
+                flex-direction: column;
+            }
+
+            .card{
+                width: 100%;
+            }
+        }
+
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Site sobre o Neegy</h1>
+      <p>site sobre o Neegy</p>
+    </header>
+
+    <nav>
+      <a href="#">Início</a>
+      <a href="#">Sobre</a>
+      <a href="#">Projetos</a>
+      <a href="#">Contato</a>
+    </nav>
+
+    <main>
+      <section class="destaque">
+        <h2>Bem-vindo!</h2>
+
+        <p>Um pouco sobre o Neegy</p>
+      </section>
+
+      <section class="cards">
+        <div class="card">
+          <h2>História </h2>
+          <p>Neegy nasceu diferente de todos ao seu redor. Desde pequeno, sua aparência dourada e seu jeito único chamavam atenção por onde passava. Apesar das dificuldades, ele nunca deixou que isso o impedisse de seguir seus sonhos.
+
+Durante sua vida, Neegy aprendeu a valorizar quem realmente estava ao seu lado e a transformar suas diferenças em sua maior força.
+
+Hoje, ele segue sua jornada, sempre curioso, determinado e com seu jeito peculiar de enxergar o mundo.
+
+Neegy não nasceu para ser igual aos outros. Nasceu para ser lembrado.</p>
+        </div>
+
+        <div class="card">
+          <h2>Foto de Neegy</h2>
+           <img src="neegy_de_lado-removebg-preview.png" alt="Foto de Neegy">
+        </div>
+
+        <div class="card">
+          <h2>Amigos de Neegy</h2>
+          <img src="amigos do neegy.jpg" alt="Amigos de Neegy">
+        </div>
+      </section>
+    </main>
+
+    <footer> &copy; 2026 Neegy. All rights reserved.</footer>
+  </body>
+</html>
